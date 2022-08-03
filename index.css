@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font:normal 100% Arial,sans-serif;
+    font-size:14px;
+    font-size:1.4rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.main{
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    height: 100vh;
+    background: #e7e7e7;
+    flex-direction: column;
+}
+.main header{
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background: #BD2D30;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+header a{
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    margin: 0 0.5rem;
+    color: white;
+}
+.main .subject{
+    position: relative;
+    display: flex;
+    height: 5rem;
+    border-bottom: 2px solid #cccccc;
+}
+.main .subject:hover{
+    background: #afafaf;
+}
+.subject .subject-name{
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    padding: 1.25rem 1rem;
+    font-weight: 700;
+}
+.subject .subject-number{
+    position: absolute;
+    font-size: 14px;
+    padding: 0 1rem;
+    bottom: 0;
+    right: 0;
+}
+.content{
+    position: relative;
+}
+.content .question{
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 22px;
+}
+.content ul{
+    display: flex;
+    margin: 1rem 0.5rem;
+    align-items: center;
+    height: 4rem;
+}
+.content li{
+    width: 2rem;
+    height: 2rem;
+    padding: 0.25rem;
+    text-align: center;
+    line-height: 2rem;
+    background: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 25px;
+    font-weight: 300;
+    box-shadow: inset 0 3px 3px rgb(0 0 0 / 8%), 0 0 6px #8f8f8f;
+}
+.content ul span{
+    margin: 0 1rem;
+    font-size: 16px;
+}
+.content button{
+    outline-style: none;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+}
+.content .buttonBox{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 6rem;
+    bottom: 0;
+}
+.content .buttonBox button:nth-child(1){
+    position: absolute;
+    left: 0;
+    margin: 2rem 4rem;
+    background: #ab9d9d;
+}
+.content .buttonBox button:nth-child(2){
+    position: absolute;
+    right: 0;
+    margin: 2rem 4rem;
+    background: #b21616;
+}
+.content .analysis{
+    display: none;
+    margin: 1rem;
+    font-size: 20px;
+    color: royalblue;
+}
+.content .analysis span{
+    color: red;
+}
