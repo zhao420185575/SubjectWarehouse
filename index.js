@@ -170,8 +170,10 @@ function wrong(){
 }
 function previousSub(){
     let tempNumber = localStorage.getItem(location.hash.slice(2))
-    localStorage.setItem(location.hash.slice(2),Number(tempNumber)-1)
-    render(location.hash.slice(2))
+    if(Number(tempNumber) > 0){
+        localStorage.setItem(location.hash.slice(2),Number(tempNumber)-1)
+        render(location.hash.slice(2))
+    }
 }
 function nextSub(){
     let tempNumber = localStorage.getItem(location.hash.slice(2))
