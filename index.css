@@ -20,7 +20,9 @@ li{
 .main{
     display: flex;
     margin: 0 auto;
-    width: auto;
+    width: 100%;
+	max-width: 500px;
+	min-width: 300px;
     height: 100vh;
     background: #e7e7e7;
     flex-direction: column;
@@ -33,6 +35,7 @@ li{
     color: white;
     font-size: 20px;
     font-weight: 900;
+	position: relative;
 }
 header a{
     position: absolute;
@@ -46,6 +49,7 @@ header a{
     display: flex;
     height: 5rem;
     border-bottom: 2px solid #cccccc;
+	cursor: pointer;
 }
 .main .subject:hover{
     background: #afafaf;
@@ -77,6 +81,10 @@ header a{
     margin: 1rem 0.5rem;
     align-items: center;
     height: 4rem;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding: 4px 8px;
+	border-radius: 4px;
 }
 .content li{
     width: 2rem;
@@ -105,9 +113,12 @@ header a{
 .content .buttonBox{
     display: block;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 6rem;
     bottom: 0;
+}
+.content .buttonBox button{
+	cursor: pointer;
 }
 .content .buttonBox button:nth-child(1){
     position: absolute;
